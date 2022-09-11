@@ -374,6 +374,13 @@
 	numpages     = 26,
 	keywords     = {Static analysis, Android, Malware, Privacy, Mobile app security, Life cycle models}
 }
+@article{chen2022automatically,
+	title        = {Automatically Distilling Storyboard with Rich Features for Android Apps},
+	author       = {Chen, Sen and Fan, Lingling and Chen, Chunyang and Liu, Yang},
+	year         = 2022,
+	journal      = {IEEE Transactions on Software Engineering},
+	publisher    = {IEEE}
+}
 @article{10.1016/j.cose.2016.11.011,
 	title        = {DroidNative: Automating and optimizing detection of Android native code malware variants},
 	author       = {Shahid Alam and Zhengyang Qu and Ryan Riley and Yan Chen and Vaibhav Rastogi},
@@ -487,6 +494,28 @@
 	booktitle    = {2014 Third International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security (BADGERS)},
 	pages        = {3--17},
 	doi          = {10.1109/BADGERS.2014.7}
+}
+@phdthesis{andersen1994program,
+	title        = {Program analysis and specialization for the {C} programming language},
+	author       = {Andersen, Lars Ole},
+	year         = 1994,
+	school       = {Cornell}
+}
+@inproceedings{10.1145/237721.237727,
+	title        = {Points-to Analysis in Almost Linear Time},
+	author       = {Steensgaard, Bjarne},
+	year         = 1996,
+	booktitle    = {Proceedings of the 23rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+	location     = {St. Petersburg Beach, Florida, USA},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {POPL '96},
+	pages        = {32–41},
+	doi          = {10.1145/237721.237727},
+	isbn         = {0897917693},
+	url          = {https://doi.org/10.1145/237721.237727},
+	abstract     = {We present an interprocedural flow-insensitive points-to analysis based on type inference methods with an almost linear time cost complexity To our knowledge, this is the asymptotically fastest non-trivial interprocedural points-to analysis algorithm yet described The algorithm is based on a non-standard type system. The type inferred for any variable represents a set of locations and includes a type which in turn represents a set of locations possibly pointed to by the variable. The type inferred for a function variable represents a set of functions It may point to and includes a type signature for these functions The results are equivalent to those of a flow-insensitive alias analysis (and control flow analysis) that assumes alias relations are reflexive and transitive.This work makes three contributions. The first is a type system for describing a universally valid storage shape graph for a program in linear space. The second is a constraint system which often leads to better results than the "obvious" constraint system for the given type system The third is an almost linear time algorithm for points-to analysis by solving a constraint system.},
+	numpages     = 10
 }
 @inproceedings{10.1109/DSN.2008.4630086,
 	title        = {Towards an understanding of anti-virtualization and anti-debugging behavior in modern malware},
@@ -1099,6 +1128,40 @@
 	numpages     = 12,
 	keywords     = {Jimple, Android, static analysis, Dalvik bytecode, code generation, Soot}
 }
+@inproceedings{10.1145/2259051.2259052,
+	title        = {Inter-Procedural Data-Flow Analysis with IFDS/IDE and Soot},
+	author       = {Bodden, Eric},
+	year         = 2012,
+	booktitle    = {Proceedings of the ACM SIGPLAN International Workshop on State of the Art in Java Program Analysis},
+	location     = {Beijing, China},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {SOAP '12},
+	pages        = {3–8},
+	doi          = {10.1145/2259051.2259052},
+	isbn         = 9781450314909,
+	url          = {https://doi.org/10.1145/2259051.2259052},
+	abstract     = {The IFDS and IDE frameworks by Reps, Horwitz and Sagiv are two general frameworks for the inter-procedural analysis of data-flow problems with distributive flow functions over finite domains. Many data-flow problems do have distributive flow functions and are thus expressible as IFDS or IDE problems, reaching from basic analyses like truly-live variables to complex analyses for problems from the current literature such as typestate and secure information-flow.In this work we describe our implementation of a generic IFDS/IDE solver on top of Soot and contrast it with an IFDS implementation in the Watson Libraries for Analysis (WALA), both from a user's perspective and in terms of the implementation. While WALA's implementation is geared much towards memory efficiency, ours is currently geared more towards extensibility and ease of use and we focus on efficiency as a secondary goal.We further discuss possible extensions to our IFDS/IDE implementation that may be useful to support a wider range of analyses.},
+	numpages     = 6,
+	keywords     = {IFDS, IDE, inter-procedural static analysis, flow-sensitive analysis}
+}
+@inproceedings{10.1145/3510003.3510161,
+	title        = {Rotten Apples Spoil the Bunch: An Anatomy of Google Play Malware},
+	author       = {Cao, Michael and Ahmed, Khaled and Rubin, Julia},
+	year         = 2022,
+	booktitle    = {Proceedings of the 44th International Conference on Software Engineering},
+	location     = {Pittsburgh, Pennsylvania},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {ICSE '22},
+	pages        = {1919–1931},
+	doi          = {10.1145/3510003.3510161},
+	isbn         = 9781450392211,
+	url          = {https://doi.org/10.1145/3510003.3510161},
+	abstract     = {This paper provides an in-depth analysis of Android malware that bypassed the strictest defenses of the Google Play application store and penetrated the official Android market between January 2016 and July 2021. We systematically identified 1,238 such malicious applications, grouped them into 134 families, and manually analyzed one application from 105 distinct families. During our manual analysis, we identified malicious payloads the applications execute, conditions guarding execution of the payloads, hiding techniques applications employ to evade detection by the user, and other implementation-level properties relevant for automated malware detection. As most applications in our dataset contain multiple payloads, each triggered via its own complex activation logic, we also contribute a graph-based representation showing activation paths for all application payloads in form of a control- and data-flow graph. Furthermore, we discuss the capabilities of existing malware detection tools, put them in context of the properties observed in the analyzed malware, and identify gaps and future research directions. We believe that our detailed analysis of the recent, evasive malware will be of interest to researchers and practitioners and will help further improve malware detection tools.},
+	numpages     = 13,
+	keywords     = {malware, manual analysis, dataset, Android, malware detection}
+}
 @inproceedings{10.1145/2307636.2307663,
 	title        = {RiskRanker: Scalable and Accurate Zero-Day Android Malware Detection},
 	author       = {Grace, Michael and Zhou, Yajin and Zhang, Qiang and Zou, Shihong and Jiang, Xuxian},
@@ -1149,6 +1212,16 @@
 	issue_date   = {Oct. 1996},
 	abstract     = {Virtual functions make code easier for programmers to reuse but also make it harder for compilers to analyze. We investigate the ability of three static analysis algorithms to improve C++ programs by resolving virtual function calls, thereby reducing compiled code size and reducing program complexity so as to improve both human and automated program understanding and analysis. In measurements of seven programs of significant size (5000 to 20000 lines of code each) we found that on average the most precise of the three algorithms resolved 71\% of the virtual function calls and reduced compiled code size by 25\%. This algorithm is very fast: it analyzes 3300 source lines per second on an 80 MHz PowerPC 601. Because of its accuracy and speed, this algorithm is an excellent candidate for inclusion in production C++ compilers.},
 	numpages     = 18
+}
+@article{10.1109/TSE.1979.234183,
+	title        = {Constructing the Call Graph of a Program},
+	author       = {Ryder, B.G.},
+	year         = 1979,
+	journal      = {IEEE Transactions on Software Engineering},
+	volume       = {SE-5},
+	number       = 3,
+	pages        = {216--226},
+	doi          = {10.1109/TSE.1979.234183}
 }
 @inproceedings{10.1145/2381934.2381950,
 	title        = {SmartDroid: An Automatic System for Revealing UI-Based Trigger Conditions in Android Applications},
@@ -1321,6 +1394,65 @@
 	numpages     = 13,
 	keywords     = {points-to analysis, icc (inter-component communication), android application, security vetting, information leakage, vulnerable app, malware}
 }
+@inproceedings{10.1007/978-3-319-60876-1_12,
+	title        = {Deep Ground Truth Analysis of Current Android Malware},
+	author       = {Wei, Fengguo and Li, Yuping and Roy, Sankardas and Ou, Xinming and Zhou, Wu},
+	year         = 2017,
+	booktitle    = {Detection of Intrusions and Malware, and Vulnerability Assessment},
+	publisher    = {Springer International Publishing},
+	address      = {Cham},
+	pages        = {252--276},
+	isbn         = {978-3-319-60876-1},
+	editor       = {Polychronakis, Michalis and Meier, Michael},
+	abstract     = {To build effective malware analysis techniques and to evaluate new detection tools, up-to-date datasets reflecting the current Android malware landscape are essential. For such datasets to be maximally useful, they need to contain reliable and complete information on malware's behaviors and techniques used in the malicious activities. Such a dataset shall also provide a comprehensive coverage of a large number of types of malware. The Android Malware Genome created circa 2011 has been the only well-labeled and widely studied dataset the research community had easy access to (As of 12/21/2015 the Genome authors have stopped supporting the dataset sharing due to resource limitation). But not only is it outdated and no longer represents the current Android malware landscape, it also does not provide as detailed information on malware's behaviors as needed for research. Thus it is urgent to create a high-quality dataset for Android malware. While existing information sources such as VirusTotal are useful, to obtain the accurate and detailed information for malware behaviors, deep manual analysis is indispensable. In this work we present our approach to preparing a large Android malware dataset for the research community. We leverage existing anti-virus scan results and automation techniques in categorizing our large dataset (containing 24,650 malware app samples) into 135 varieties (based on malware behavioral semantics) which belong to 71 malware families. For each variety, we select three samples as representatives, for a total of 405 malware samples, to conduct in-depth manual analysis. Based on the manual analysis result we generate detailed descriptions of each malware variety's behaviors and include them in our dataset. We also report our observations on the current landscape of Android malware as depicted in the dataset. Furthermore, we present detailed documentation of the process used in creating the dataset, including the guidelines for the manual analysis. We make our Android malware dataset available to the research community.}
+}
+@inproceedings{10.1145/2714576.2714604,
+	title        = {Android Implicit Information Flow Demystified},
+	author       = {You, Wei and Liang, Bin and Li, Jingzhe and Shi, Wenchang and Zhang, Xiangyu},
+	year         = 2015,
+	booktitle    = {Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security},
+	location     = {Singapore, Republic of Singapore},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {ASIA CCS '15},
+	pages        = {585–590},
+	doi          = {10.1145/2714576.2714604},
+	isbn         = 9781450332453,
+	url          = {https://doi.org/10.1145/2714576.2714604},
+	abstract     = {In this paper, a comprehensive analysis of implicit information flow (IIF) on the Android bytecode is presented to identify all potential IIF forms, determine their exploitability, and mitigate the potential threat. By applying control-transfer-oriented semantic analysis of the bytecode language, we identify five IIF forms, some of which are not studied by existing IIF literature. We develop proof-of-concepts (PoCs) for each IIF form to demonstrate their exploitability. The experimental results show that all these PoCs can effectively and efficiently transmit sensitive data, as well as successfully evade the detection of a state-of-the-art privacy monitor TaintDroid. To mitigate the threat of IIF, we propose a solution to defending against IIF leveraging a special control dependence tracking technique and implement a prototype system. The evaluation shows that the prototype can effectively detect information leak by all the identified IIF forms and also real-world malware with an acceptable overhead. In summary, our study gives in-depth insight into Android IIF from both offensive and defensive perspectives, and provides a foundation for further research on Android IIF.},
+	numpages     = 6,
+	keywords     = {implicit information flow, android, mitigation, exploitation}
+}
+@inproceedings{10.1109/ICSE-Companion55297.2022.9793791,
+	title        = {ICCBot: Fragment-Aware and Context-Sensitive ICC Resolution for Android Applications},
+	author       = {Yan, Jiwei and Zhang, Shixin and Liu, Yepang and Yan, Jun and Zhang, Jian},
+	year         = 2022,
+	booktitle    = {2022 IEEE/ACM 44th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)},
+	pages        = {105--109},
+	doi          = {10.1109/ICSE-Companion55297.2022.9793791}
+}
+@inbook{10.1145/3368089.3409699,
+	title        = {Static Asynchronous Component Misuse Detection for Android Applications},
+	author       = {Pan, Linjie and Cui, Baoquan and Liu, Hao and Yan, Jiwei and Wang, Siqi and Yan, Jun and Zhang, Jian},
+	year         = 2020,
+	booktitle    = {Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	pages        = {952–963},
+	isbn         = 9781450370431,
+	url          = {https://doi.org/10.1145/3368089.3409699},
+	abstract     = {Facing the limited resource of smartphones, asynchronous programming significantly improves the performance of Android applications. Android provides several packaged components to ease the development of asynchronous programming. Among them, the AsyncTask component is widely used by developers since it is easy to implement. However, the abuse of AsyncTask component can decrease responsiveness and even lead to crashes. By investigating the Android Developer Documentation and technical forums, we summarize five misuse patterns about AsyncTask. To detect them, we propose a flow, context, object and field-sensitive inter-procedural static analysis approach. Specifically, the static analysis includes typestate analysis, reference analysis and loop analysis. Based on the AsyncTask-related information obtained during static analysis, we check the misuse according to predefined detection rules. The proposed approach is implemented into a tool called AsyncChecker. We evaluate AsyncChecker on a self-designed benchmark suite called AsyncBench and 1,759 real-world apps. AsyncChecker finds 17,946 misused AsyncTask instances in 1,417 real-world apps (80.6\%). The precision, recall and F-measure of AsyncChecker on real-world applications are 97.2\%, 89.8\% and 0.93, respectively. Compared with existing tools, AsyncChecker can detect more asynchronous problems. We report the misuse problems to developers via GitHub. Several developers have confirmed and fixed the problems found by AsyncChecker. The result implies that our approach is effective and developers do take the misuse of AsyncTask as a serious problem.},
+	numpages     = 12
+}
+@inproceedings{BarrosJMVDdAE2015,
+	title        = {Static analysis of implicit control flow: Resolving {Java} reflection and {Android} intents},
+	author       = {Paulo Barros and Ren{\'e} Just and Suzanne Millstein and Paul Vines and Werner Dietl and Marcelo d'Amorim and Michael D. Ernst},
+	year         = 2015,
+	month        = {November~11--13},
+	booktitle    = {Proceedings of the International Conference on Automated Software Engineering (ASE)},
+	address      = {Lincoln, NE, USA},
+	pages        = {669--679}
+}
 @article{10.1145/2666356.2594299,
 	title        = {FlowDroid: Precise Context, Flow, Field, Object-Sensitive and Lifecycle-Aware Taint Analysis for Android Apps},
 	author       = {Arzt, Steven and Rasthofer, Siegfried and Fritz, Christian and Bodden, Eric and Bartel, Alexandre and Klein, Jacques and Le Traon, Yves and Octeau, Damien and McDaniel, Patrick},
@@ -1460,6 +1592,29 @@
 	abstract     = {Android developers heavily use reflection in their apps for legitimate reasons, but also significantly for hiding malicious actions. Unfortunately, current state-of-the-art static analysis tools for Android are challenged by the presence of reflective calls which they usually ignore. Thus, the results of their security analysis, e.g., for private data leaks, are inconsistent given the measures taken by malware writers to elude static detection. We propose the DroidRA instrumentation-based approach to address this issue in a non-invasive way. With DroidRA, we reduce the resolution of reflective calls to a composite constant propagation problem. We leverage the COAL solver to infer the values of reflection targets and app, and we eventually instrument this app to include the corresponding traditional Java call for each reflective call. Our approach allows to boost an app so that it can be immediately analyzable, including by such static analyzers that were not reflection-aware. We evaluate DroidRA on benchmark apps as well as on real-world apps, and demonstrate that it can allow state-of-the-art tools to provide more sound and complete analysis results.},
 	numpages     = 12,
 	keywords     = {Android, Reflection, DroidRA, Static Analysis}
+}
+@article{van2013dynamic,
+	title        = {Dynamic analysis of android malware},
+	author       = {Van Der Veen, Victor and Bos, Herbert and Rossow, Christian},
+	year         = 2013,
+	journal      = {Internet \& Web Technology Master thesis, VU University Amsterdam}
+}
+@inproceedings{10.1145/2660267.2660343,
+	title        = {Collaborative Verification of Information Flow for a High-Assurance App Store},
+	author       = {Ernst, Michael D. and Just, Ren\'{e} and Millstein, Suzanne and Dietl, Werner and Pernsteiner, Stuart and Roesner, Franziska and Koscher, Karl and Barros, Paulo Barros and Bhoraskar, Ravi and Han, Seungyeop and Vines, Paul and Wu, Edward X.},
+	year         = 2014,
+	booktitle    = {Proceedings of the 2014 ACM SIGSAC Conference on Computer and Communications Security},
+	location     = {Scottsdale, Arizona, USA},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {CCS '14},
+	pages        = {1092–1104},
+	doi          = {10.1145/2660267.2660343},
+	isbn         = 9781450329576,
+	url          = {https://doi.org/10.1145/2660267.2660343},
+	abstract     = {Current app stores distribute some malware to unsuspecting users, even though the app approval process may be costly and time-consuming. High-integrity app stores must provide stronger guarantees that their apps are not malicious. We propose a verification model for use in such app stores to guarantee that the apps are free of malicious information flows. In our model, the software vendor and the app store auditor collaborate -- each does tasks that are easy for her/him, reducing overall verification cost. The software vendor provides a behavioral specification of information flow (at a finer granularity than used by current app stores) and source code annotated with information-flow type qualifiers. A flow-sensitive, context-sensitive information-flow type system checks the information flow type qualifiers in the source code and proves that only information flows in the specification can occur at run time. The app store auditor uses the vendor-provided source code to manually verify declassifications.We have implemented the information-flow type system for Android apps written in Java, and we evaluated both its effectiveness at detecting information-flow violations and its usability in practice. In an adversarial Red Team evaluation, we analyzed 72 apps (576,000 LOC) for malware. The 57 Trojans among these had been written specifically to defeat a malware analysis such as ours. Nonetheless, our information-flow type system was effective: it detected 96\% of malware whose malicious behavior was related to information flow and 82\% of all malware. In addition to the adversarial evaluation, we evaluated the practicality of using the collaborative model. The programmer annotation burden is low: 6 annotations per 100 LOC. Every sound analysis requires a human to review potential false alarms, and in our experiments, this took 30 minutes per 1,000 LOC for an auditor unfamiliar with the app.},
+	numpages     = 13,
+	keywords     = {static analysis, android security, information flow, collaborative verification}
 }
 @inproceedings{10.1145/2931037.2931054,
 	title        = {Sapienz: Multi-Objective Automated Testing for Android Applications},
@@ -1847,6 +2002,25 @@
 	numpages     = 22,
 	keywords     = {Classifiers, Intelligent Data Analysis, Data Mining, Learning Algorithms}
 }
+@article{10.1145/3395042,
+	title        = {Fine-Grained Code Coverage Measurement in Automated Black-Box Android Testing},
+	author       = {Pilgun, Aleksandr and Gadyatskaya, Olga and Zhauniarovich, Yury and Dashevskyi, Stanislav and Kushniarou, Artsiom and Mauw, Sjouke},
+	year         = 2020,
+	month        = {jul},
+	journal      = {ACM Trans. Softw. Eng. Methodol.},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	volume       = 29,
+	number       = 4,
+	doi          = {10.1145/3395042},
+	issn         = {1049-331X},
+	url          = {https://doi.org/10.1145/3395042},
+	issue_date   = {October 2020},
+	abstract     = {Today, there are millions of third-party Android applications. Some of them are buggy or even malicious. To identify such applications, novel frameworks for automated black-box testing and dynamic analysis are being developed by the Android community. Code coverage is one of the most common metrics for evaluating effectiveness of these frameworks. Furthermore, code coverage is used as a fitness function for guiding evolutionary and fuzzy testing techniques. However, there are no reliable tools for measuring fine-grained code coverage in black-box Android app testing.We present the Android Code coVerage Tool, ACVTool for short, that instruments Android apps and measures code coverage in the black-box setting at class, method and instruction granularity. ACVTool has successfully instrumented 96.9\% of apps in our experiments. It introduces a negligible instrumentation time overhead, and its runtime overhead is acceptable for automated testing tools. We demonstrate practical value of ACVTool in a large-scale experiment with Sapienz, a state-of-the-art automated testing tool. Using ACVTool on the same cohort of apps, we have compared different coverage granularities applied by Sapienz in terms of the found amount of crashes. Our results show that none of the applied coverage granularities clearly outperforms others in this aspect.},
+	articleno    = 23,
+	numpages     = 35,
+	keywords     = {Android, code coverage, automated software testing, instrumentation}
+}
 @inproceedings{10.5555/1765931.1765948,
 	title        = {Scaling Java Points-to Analysis Using SPARK},
 	author       = {Lhot\'{a}k, Ond\v{r}ej and Hendren, Laurie},
@@ -2106,6 +2280,16 @@
 	year         = 2004,
 	publisher    = {Citeseer}
 }
+@inproceedings{10.1109/DSN.2012.6263963,
+	title        = {An empirical study of the robustness of Inter-component Communication in Android},
+	author       = {Maji, Amiya K. and Arshad, Fahad A. and Bagchi, Saurabh and Rellermeyer, Jan S.},
+	year         = 2012,
+	booktitle    = {IEEE/IFIP International Conference on Dependable Systems and Networks (DSN 2012)},
+	volume       = {},
+	number       = {},
+	pages        = {1--12},
+	doi          = {10.1109/DSN.2012.6263963}
+}
 @inproceedings{gordon2015information,
 	title        = {Information flow analysis of android applications in droidsafe.},
 	author       = {Gordon, Michael I and Kim, Deokhwan and Perkins, Jeff H and Gilham, Limei and Nguyen, Nguyen and Rinard, Martin C},
@@ -2126,6 +2310,65 @@
 	pdf          = {https://hal.archives-ouvertes.fr/hal-00700319/file/article.pdf},
 	hal_id       = {hal-00700319},
 	hal_version  = {v1}
+}
+@article{10.1145/3440033,
+	title        = {Taming Reflection: An Essential Step Toward Whole-program Analysis of Android Apps},
+	author       = {Sun, Xiaoyu  and Li, Li and Bissyandé, Tegawendé F.  and Klein, Jacques and Octeau, Damien and Grundy, John},
+	year         = 2021,
+	journal      = {ACM Trans. Softw. Eng. Methodol.},
+	volume       = 30,
+	number       = 3,
+	pages        = 36,
+	doi          = {https://doi.org/10.1145/3440033}
+}
+@inproceedings{cao2015edgeminer,
+	title        = {EdgeMiner: Automatically Detecting Implicit Control Flow Transitions through the Android Framework.},
+	author       = {Cao, Yinzhi and Fratantonio, Yanick and Bianchi, Antonio and Egele, Manuel and Kruegel, Christopher and Vigna, Giovanni and Chen, Yan},
+	year         = 2015,
+	booktitle    = {NDSS}
+}
+@inproceedings{10.1109/ASE.2015.76,
+	title        = {Static Window Transition Graphs for Android},
+	author       = {Yang, Shengqian and Zhang, Hailong and Wu, Haowei and Wang, Yan and Yan, Dacong and Rountev, Atanas},
+	year         = 2015,
+	booktitle    = {Proceedings of the 30th IEEE/ACM International Conference on Automated Software Engineering},
+	location     = {Lincoln, Nebraska},
+	publisher    = {IEEE Press},
+	series       = {ASE '15},
+	pages        = {658–668},
+	doi          = {10.1109/ASE.2015.76},
+	isbn         = 9781509000241,
+	url          = {https://doi.org/10.1109/ASE.2015.76},
+	abstract     = {This work develops a static analysis to create a model of the behavior of an Android application's GUI. We propose the window transition graph (WTG), a model representing the possible GUI window sequences and their associated events and callbacks. A key component and contribution of our work is the careful modeling of the stack of currently-active windows, the changes to this stack, and the effects of callbacks related to these changes. To the best of our knowledge, this is the first detailed study of this important static analysis problem for Android. We develop novel analysis algorithms for WTG construction and traversal, based on this modeling of the window stack. We also describe an application of the WTG for GUI test generation, using path traversals. The evaluation of the proposed algorithms indicates their effectiveness and practicality.},
+	numpages     = 11
+}
+@inproceedings{10.1109/ICSE.2019.00070,
+	title        = {StoryDroid: Automated Generation of Storyboard for Android Apps},
+	author       = {Chen, Sen and Fan, Lingling and Chen, Chunyang and Su, Ting and Li, Wenhe and Liu, Yang and Xu, Lihua},
+	year         = 2019,
+	booktitle    = {2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE)},
+	pages        = {596--607},
+	doi          = {10.1109/ICSE.2019.00070}
+}
+@inproceedings{10.1109/ICSE.2015.31,
+	title        = {Static Control-Flow Analysis of User-Driven Callbacks in Android Applications},
+	author       = {Yang, Shengqian and Yan, Dacong and Wu, Haowei and Wang, Yan and Rountev, Atanas},
+	year         = 2015,
+	booktitle    = {2015 IEEE/ACM 37th IEEE International Conference on Software Engineering},
+	volume       = 1,
+	number       = {},
+	pages        = {89--99},
+	doi          = {10.1109/ICSE.2015.31}
+}
+@article{10.1109/TSE.2016.2547385,
+	title        = {Light-Weight, Inter-Procedural and Callback-Aware Resource Leak Detection for Android Apps},
+	author       = {Wu, Tianyong and Liu, Jierui and Xu, Zhenbo and Guo, Chaorong and Zhang, Yanli and Yan, Jun and Zhang, Jian},
+	year         = 2016,
+	journal      = {IEEE Transactions on Software Engineering},
+	volume       = 42,
+	number       = 11,
+	pages        = {1054--1076},
+	doi          = {10.1109/TSE.2016.2547385}
 }
 @article{kan2019automated,
 	title        = {Automated deobfuscation of Android native binary code},
@@ -2176,6 +2419,22 @@
 	author       = {Tam, Kimberly and Khan, Salahuddin J and Fattori, Aristide and Cavallaro, Lorenzo},
 	year         = 2015,
 	booktitle    = {Ndss}
+}
+@inproceedings{10.1145/199448.199462,
+	title        = {Precise Interprocedural Dataflow Analysis via Graph Reachability},
+	author       = {Reps, Thomas and Horwitz, Susan and Sagiv, Mooly},
+	year         = 1995,
+	booktitle    = {Proceedings of the 22nd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+	location     = {San Francisco, California, USA},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {POPL '95},
+	pages        = {49–61},
+	doi          = {10.1145/199448.199462},
+	isbn         = {0897916921},
+	url          = {https://doi.org/10.1145/199448.199462},
+	abstract     = {The paper shows how a large class of interprocedural dataflow-analysis problems can be solved precisely in polynomial time by transforming them into a special kind of graph-reachability problem. The only restrictions are that the set of dataflow facts must be a finite set, and that the dataflow functions must distribute over the confluence operator (either union or intersection). This class of probable problems includes—but is not limited to—the classical separable problems (also known as “gen/kill” or “bit-vector” problems)—e.g., reaching definitions, available expressions, and live variables. In addition, the class of problems that our techniques handle includes many non-separable problems, including truly-live variables, copy constant propagation, and possibly-uninitialized variables.Results are reported from a preliminary experimental study of C programs (for the problem of finding possibly-uninitialized variables).},
+	numpages     = 13
 }
 @article{vallee1998jimple,
 	title        = {Jimple: Simplifying Java bytecode for analyses and transformations},
